@@ -1,0 +1,5 @@
+name = Contact Support Module
+description = Adds functionality to existing contact module
+package = Custom Modules
+core = 7.x
+files[] = contact_support.module
