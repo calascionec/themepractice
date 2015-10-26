@@ -1,0 +1,5 @@
+name = Follow Extend Module
+description = Adds extra links
+package = Custom Modules
+core = 7.x
+files[] = follow_extend.module, follow_extend.css
