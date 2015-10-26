@@ -1,0 +1,7 @@
+<?php
+
+function display_uncheck_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'node_type_form'){
+    $form['display']['node_submitted']['#default_value'] = 0;
+  }
+}

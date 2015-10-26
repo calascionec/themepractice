@@ -1,6 +1,14 @@
 <?php
 
-function contact_support_form_alter(&$form, &$form_state) {
-  unset($form['subject']);
-  unset($form['copy']);
+function contact_support_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'contact_site_form'){
+    //prints form information to page
+    // print '<pre>';
+    // print_r($form);
+    // print '</pre>';
+    hide($form['subject']);
+    $form['subject']['#default_value'] = "Feedback";
+    hide($form['copy']);
+    $form['copy']['#default_value'] = 1;
+  }
 }
