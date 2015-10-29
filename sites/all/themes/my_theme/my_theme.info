@@ -1,0 +1,15 @@
+name = My Theme
+description = this is a description
+core = 7.x
+engine = phptemplate
+
+regions[content] = content
+regions[sidebar_first] = sidebar first
+regions[sidebar_second] = sidebar second
+regions[header] = header
+regions[footer] = footer
+
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/bootstrap.min.css
+
+scripts[] = scripts.js
